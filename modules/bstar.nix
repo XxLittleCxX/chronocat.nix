@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }: let
   bstar = pkgs.requireFile {
     name = "bstar-0.5.10.so";
-    sha256 = "1gr8agdfrs3jrjg0arx4bhzg4d1z3fvr2mj6lg88b0a8fmpx0rjw";
+    sha256 = "0kv1pmsb4gax47q8msrywwrgyyxvki4r2386asyy4vv9nz0ql7qh";
     message = ''
       download bstar-0.5.10.so and add it to nix store:
       nix-prefetch-url --type sha256 --name bstar-0.5.10.so file:///path/to/bstar-0.5.10.so
